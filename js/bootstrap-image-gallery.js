@@ -138,7 +138,7 @@
             window.setTimeout(function () {
                 oldImg.remove();
             }, 3000);
-            modal.find('.modal-title').text(this.titles[index]);
+            modal.find('.modal-title').html(this.titles[index]);
             modal.find('.modal-download').prop('href', this.urls[index]);
             this.loadingImage = loadImage(
                 this.urls[index],
