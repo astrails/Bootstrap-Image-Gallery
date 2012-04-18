@@ -71,7 +71,7 @@
                 // thumbnail and name linking twice to the same image:
                 if ($this.urls[$this.urls.length - 1] !== url) {
                     $this.urls.push(url);
-                    $this.titles.push(node.title);
+                    $this.titles.push($(node).data("title") || node.title);
                     $this.events_data.push($(node).data("event-data"));
                     if (url === options.href) {
                         options.index = index;
